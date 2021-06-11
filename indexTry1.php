@@ -1,8 +1,8 @@
   <?php
-function test(){
+function test($test){
 echo"<pre>";
 
-$res=file_get_contents('json.json');
+$res=file_get_contents($test);
 $data=json_decode($res,true);
 
 
@@ -26,5 +26,5 @@ $data=json_decode($res,true);
  echo"<br>";
 }
 }
-test();
+test('json.json');
    ?>
